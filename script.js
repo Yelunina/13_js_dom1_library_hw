@@ -16,6 +16,10 @@ printLibrary(library);
 function printLibrary(library) {  
     for (let i = 0; i < library.length; i++) {
          //TODO add all elements from library as list items to ul with id 'result'
+         const result = document.getElementById('result');
+         const li=document.createElement('li');
+         li.innerHTML = `<span>${result}</span>`;
+         result.append(li);
     }
 }
 
